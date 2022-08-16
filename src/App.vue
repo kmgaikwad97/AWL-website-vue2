@@ -49,8 +49,15 @@
 </template>
 
 <style>
+.main-ele {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #font-imp {
     font-family: 'Roboto Slab', serif;
+    background: black;
     /* text-align: center; */
 
 }

@@ -28,6 +28,11 @@ const routes = [
     name: 'OurServices',
     component: OurServices
   },
+  {
+    path: '/besdev',
+    name: 'Besdev',
+    component: Besdev
+  },
   // {
   //   path: '/about',
   //   name: 'About',
