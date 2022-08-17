@@ -10,7 +10,9 @@
                     <h1 class="img-head">Bespoke Developments</h1>
                     <br>
                     <a>
-                        <button class="bespokeBtn">READ MORE</button>
+                        <button class="bespokeBtn">
+                            <router-link to="/besdev" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>
@@ -23,8 +25,10 @@
                 <div class="img-data">
                     <h1 class="img-head">Bespoke Construction</h1>
                     <br>
-                    <a href="">
-                        <button class="bespokeBtn">READ MORE</button>
+                    <a>
+                        <button class="bespokeBtn">
+                            <router-link to="/bescon" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>
@@ -41,8 +45,10 @@
                 <div class="img-data">
                     <h1 class="img-head">Bespoke Interiors</h1>
                     <br>
-                    <a href="">
-                        <button class="bespokeBtn">READ MORE</button>
+                    <a>
+                        <button class="bespokeBtn">
+                            <router-link to="/besint" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>
@@ -55,8 +61,10 @@
                 <div class="img-data">
                     <h1 class="img-head">Bespoke Heritage</h1>
                     <br>
-                    <a href="">
-                        <button class="bespokeBtn">READ MORE</button>
+                    <a>
+                        <button class="bespokeBtn">
+                            <router-link to="/besher" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>

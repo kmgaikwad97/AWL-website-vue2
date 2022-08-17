@@ -4,6 +4,12 @@ import Home from '../views/Home.vue'
 import ContactUs from '../views/ContactUs.vue'
 import AboutUs from '../views/AboutUs.vue'
 import OurServices from '../views/OurServices.vue'
+import BespokeDev from '../views/BespokeDev.vue'
+import BespokeCon from '../views/BespokeCon.vue'
+import BespokeInteriors from '../views/BespokeInteriors.vue'
+import BespokeHeritage from '../views/BespokeHeritage.vue'
+import BespokeKitchen from '../views/BespokeKitchen.vue'
+import BespokeBathroom from '../views/BespokeBathroom.vue'
 
 Vue.use(VueRouter)
 
@@ -30,8 +36,33 @@ const routes = [
   },
   {
     path: '/besdev',
-    name: 'Besdev',
-    component: Besdev
+    name: 'BespokeDev',
+    component: BespokeDev
+  },
+  {
+    path: '/bescon',
+    name: 'BespokeCon',
+    component: BespokeCon
+  },
+  {
+    path: '/besint',
+    name: 'BespokeInteriors',
+    component: BespokeInteriors
+  },
+  {
+    path: '/besher',
+    name: 'BespokeHeritage',
+    component: BespokeHeritage
+  },
+  {
+    path: '/beskit',
+    name: 'BespokeKitchen',
+    component: BespokeKitchen
+  },
+  {
+    path: '/besbat',
+    name: 'BespokeBathroom',
+    component: BespokeBathroom
   },
   // {
   //   path: '/about',

@@ -4,7 +4,7 @@
         <!-- div 1 -->
 
         <!-- ========== div1 ========== -->
-        <div class="nav footer-column-1 flex-column mt-3 col-sm-12 col-md-4 col-md-4">
+        <div class="nav footer-column-1 flex-column mt-3 col-sm-12 col-md-6">
             <router-link class="nav-link active" aria-current="page" to="/">
                 <img src="../assets/images/ACE.svg" style="width: 40%" class="img-size img-fluid" alt="" />
             </router-link>
@@ -18,7 +18,7 @@
         <!-- ========== div1 ========== -->
 
         <!-- ========== div2 ========== -->
-        <div class="col-md-3 text-start secdiv" style="padding-left:50px">
+        <div class="col-md-6 text-start secdiv" style="padding-left:50px">
             <!-- <h2>hello</h2> -->
             <div class="info">
                 <h2 style="padding-left:30px">Information</h2>
@@ -37,31 +37,7 @@
         </div>
         <!-- ========== div2 ========== -->
 
-        <!-- ========== div3 ========== -->
-        <div class="col-md-5 text-start">
-            <div class="location-data info">
-                <h2 style="padding-left:7px">Our Office</h2>
-            </div>
-            <br>
-            <div class="where">
-                <ul class="where-data text-start">
-                    <li class="location">
-                        <i class="fa-solid footer-icon fa-location-dot"></i>
-                        Ace Worldwide Limited,6 Roedean Avenue, Enfield, EN3 5QJ
-                    </li>
-                    <li class="phone">
-                        <i class="fa-solid footer-icon fa-phone"></i>
-                        <a style="text-decoration:none; color:white;" href="tel:0208 058 1701">0208 058 1701</a>
-                    </li>
-                    <li class="mail">
-                        <i class="fa-solid footer-icon fa-envelope"></i>
-                        <a style="text-decoration:none; color:white;" href="info@aceworldwide.co.uk">info@aceworldwide.co.uk</a>
-                    </li>
-                </ul>
-            </div>
-            <br>
-        </div>
-        <!-- ========== div3 ========== -->
+        
 
     </div>
 </div>

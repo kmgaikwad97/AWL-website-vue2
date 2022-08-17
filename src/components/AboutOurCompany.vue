@@ -6,7 +6,7 @@
             Our Company
         </h1>
         <br>
-        <p class="paracontent" style="text-align:justify; font-size: 23px; color:orange;">
+        <p class="paracontent" style="text-align:center; font-size: 23px; color:orange;">
 
             Ace Worldwide Limited was founded to provide a superior-prime
         luxurious service for our clientele, and to create exquisite,

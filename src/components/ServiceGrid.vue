@@ -12,8 +12,10 @@
                 <div class="img-data">
                     <h1 class="img-head">Bespoke Kitchen</h1>
                     <br>
-                    <a href="">
-                        <button class="bespokeBtn">READ MORE</button>
+                    <a>
+                        <button class="bespokeBtn">
+                            <router-link to="/beskit" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>
@@ -26,8 +28,10 @@
                 <div class="img-data">
                     <h1 class="img-head">Bespoke Bathroom</h1>
                     <br>
-                    <a href="">
-                        <button class="bespokeBtn">READ MORE</button>
+                    <a>
+                        <button class="bespokeBtn">
+                            <router-link to="/besbat" style="text-decoration:none; color:black;">READ MORE</router-link>
+                        </button>
                     </a>
                 </div>
             </div>
