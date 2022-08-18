@@ -9,13 +9,13 @@
         </div> -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../assets/images/one.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
+                <img  src="../assets/images/one.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/two.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
+                <img  src="../assets/images/two.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-                <img src="../assets/images/three.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
+                <img  src="../assets/images/three.jpg" class="carousel-length carousel-display carousel-img d-block w-100" alt="..." />
             </div>
         </div>
 
@@ -30,9 +30,6 @@ export default {
 </script>
 
 <style scoped>
-/* .carousel-btn{
-    display: none;
-} */
 .centered {
     left: 0;
     position: absolute;
@@ -53,15 +50,13 @@ export default {
 }
 
 .carousel-display {
-    max-width: 100vw !important;
-    height: 260px !important;
+    /* max-width: 100vw !important; */
+    /* height: 260px !important; */
+    flex: 1 0 0px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 576px) {
-    .carousel-length {
-        max-width: 100% !important;
-        height: 350px !important;
-    }
 
     .design {
         font-size: 20px !important;
@@ -71,12 +66,23 @@ export default {
 
 @media screen and (max-width: 768px) {
     .carousel-length {
-        height: 450px !important;
+        /* height: auto !important; */
     }
 
     .design {
         font-size: 24px !important;
         padding: 0 12px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .carousel-length {
+        height: 50vh;
+        max-width: 100% !important;
+    }
+    .paracontent{
+        font-size: 16px !important;
+        padding: 0 20px;
     }
 }
 </style>

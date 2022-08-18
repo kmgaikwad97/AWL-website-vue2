@@ -13,15 +13,17 @@
                 <!-- ACE Logo End -->
 
                 <!-- respo button start-->
-                <button class="navbar-toggler navbarbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="data">
+                    <button class="navbar-toggler navbarbtn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                </div>
 
                 <!-- respo button end -->
 
                 <!-- links starts -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto myul text-center mb-2 mb-lg-0">
+                    <ul class="navbar-change navbar-nav ms-auto myul text-start mb-2 mb-lg-0">
                         <li class="nav-item space">
                             <router-link class="list" aria-current="page" to="/">Home</router-link>
                         </li>
@@ -48,6 +50,18 @@
 </div>
 </template>
 
+<script>
+export default {
+    name: "App",
+    data() {
+        return {}
+    },
+    methods: {
+
+    }
+}
+</script>
+
 <style>
 .main-ele {
     width: 100% !important;
@@ -55,16 +69,15 @@
     flex-direction: column;
     justify-content: center;
 }
+
 #font-imp {
     font-family: 'Roboto Slab', serif;
     background: black;
-    /* text-align: center; */
 
 }
 
 #app {
     font-family: 'Roboto Slab', serif;
-    /* font-family: Avenir, Helvetica, Arial, sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
@@ -89,25 +102,24 @@ nav a.router-link-exact-active {
 }
 
 .ace-logo {
-    height: 100px;
-    width: 200px;
+    height: 90px;
+    width: 100%;
 }
 
 .myclass {
     display: flex;
-    margin-left: -92px;
-    margin-top: -22px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .linkss {
-    margin-right: 300px !important;
+    /* margin-right: 300px !important; */
 }
 
 .list {
     color: rgb(255, 255, 255);
     text-decoration: none;
     padding-left: 18px;
-    margin-left: 28px;
     font-size: 20px;
     font-weight: bold;
     font-weight: 400;
@@ -118,7 +130,8 @@ nav a.router-link-exact-active {
 }
 
 .space {
-    padding-right: 2vw;
+    padding-right: 30px !important;
+    padding: 7px 0;
 }
 
 .nav-link.active {
@@ -133,6 +146,17 @@ nav a.router-link-exact-active {
     padding-top: 25px;
 }
 
+.navbarbtn {
+    margin: auto 0 !important;
+    padding: 7px !important;
+}
+
+@media (max-width: 1200px) {
+    .list {
+        margin: 0;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-expand-lg {
         flex-wrap: nowrap;
@@ -140,9 +164,50 @@ nav a.router-link-exact-active {
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .logo-svg {
-        width: 15%;
+@media only screen and (max-width: 991px) {
+    .main-ele {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+    .list {
+        color: rgb(0, 0, 0);
+    }
+
+    .navbarbtn {
+        margin: 0;
+    }
+
+    .navbar {
+        background: white !important;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 22px;
+        font-weight: 900;
+        /* width: 28px !important; */
+    }
+
+    button:focus{
+        outline: none !important;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+    }
+
+    .navbar-change {
+        left: 0px;
+        position: fixed;
+        background: #d6d6d6;
+        ;
+        width: 300px;
+        height: 100%;
+        top: 0;
+        z-index: 2;
+        transition: 0.5s;
+        padding: 30px;
     }
 }
 
@@ -151,34 +216,30 @@ nav a.router-link-exact-active {
         font-size: 45%;
     }
 
-    .logo-svg {
-        width: 20%;
-    }
-
-    .navbarbtn {
-        margin-left: 65% !important;
-    }
 }
 
 @media only screen and (max-width: 576px) {
-    .navbar {
-        position: static;
+    .navbar-change {
+        width: 150px;
+    }
+    .space a{
+        font-size: 18px !important;
+    }
+
+    .list {
+        padding: 0;
+    }
+
+    .ace-logo {
+        height: 70px;
+    }
+
+    .myclass {
+        margin: 0 10px !important;
     }
 
     html {
         font-size: 35%;
-    }
-
-    .logo-svg {
-        width: 25%;
-    }
-
-    .myclass {
-        display: inline-block;
-    }
-
-    .navbarbtn {
-        margin-left: 50% !important;
     }
 }
 
@@ -186,13 +247,12 @@ nav a.router-link-exact-active {
     html {
         font-size: 55%;
     }
-
-    .myclass {
-        display: inline-block;
+    .myclass{
+        display: contents;
     }
-
-    .navbarbtn {
-        margin-left: 73%;
+    .navbar-change{
+        transition: 0.9s ease-in linear !important;
+        padding-left: 20px;
     }
 }
 
@@ -200,19 +260,7 @@ nav a.router-link-exact-active {
     html {
         font-size: 30%;
     }
-
-    .navbarbtn {
-        margin-left: 44% !important;
-    }
-
-    .myclass {
-        display: inline-block;
-    }
 }
 
-@media only screen and (max-width: 260px) {
-    .navbarbtn {
-        margin-left: 33% !important;
-    }
-}
+@media only screen and (max-width: 260px) {}
 </style>

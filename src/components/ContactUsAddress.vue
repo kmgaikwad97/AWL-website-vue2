@@ -73,4 +73,11 @@ export default {};
     color: white;
     font-size: 19px;
 }
+@media screen and (max-width: 768px) {
+    .location,
+    .phone,
+    .mail {
+       font-size: 15px !important; 
+    }
+}
 </style>

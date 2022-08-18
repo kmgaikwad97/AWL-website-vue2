@@ -1,10 +1,10 @@
 <template>
-<div class="black-footer">
+<div class="black-footer pb-5">
     <div class="row justify-content-evenly text-center align-items-center footer p-0 m-0 pb-5">
         <!-- div 1 -->
 
         <!-- ========== div1 ========== -->
-        <div class="nav footer-column-1 flex-column mt-3 col-sm-12 col-md-4 col-md-4">
+        <div class="nav footer-column-1 pt-5 flex-column mt-3 col-sm-12 col-md-4 col-md-4">
             <router-link class="nav-link active" aria-current="page" to="/">
                 <img src="../assets/images/ACE.svg" style="width: 40%" class="img-size img-fluid" alt="" />
             </router-link>
@@ -18,10 +18,10 @@
         <!-- ========== div1 ========== -->
 
         <!-- ========== div2 ========== -->
-        <div class="col-md-3 text-start secdiv" style="padding-left:50px">
+        <div class="col-md-3 pt-5 text-start secdiv" style="padding-left:50px">
             <!-- <h2>hello</h2> -->
             <div class="info">
-                <h2 style="padding-left:30px">Information</h2>
+                <h2 class="head-size" style="padding-left:30px">Information</h2>
             </div>
             <br>
 
@@ -31,16 +31,16 @@
                     <span class="golden-btn" v-show="nav.name !== this.$route.name" @click.enter="scrollToTop" @click="changeRoute(nav, index)">{{ nav.name }}</span>
                 </div> -->
                 <ul class="golden-div" v-for="(nav, index) in navigation" :key="index">
-                    <li class="golden-btn" @click.enter="scrollToTop"  @click="changeRoute(nav, index)">{{nav.name}}</li>
+                    <li class="golden-btn" @click.enter="scrollToTop" @click="changeRoute(nav, index)">{{nav.name}}</li>
                 </ul>
             </div>
         </div>
         <!-- ========== div2 ========== -->
 
         <!-- ========== div3 ========== -->
-        <div class="col-md-5 text-start">
+        <div class="col-md-5 pt-5 text-start">
             <div class="location-data info">
-                <h2 style="padding-left:7px">Our Office</h2>
+                <h2 class="head-size" style="padding-left:7px">Our Office</h2>
             </div>
             <br>
             <div class="where">
@@ -192,5 +192,32 @@ export default {
 
 .black-footer {
     border-top: 2px solid orange;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-para {
+        font-size: 15px;
+        /* font-weight: 400; */
+    }
+
+    .head-size {
+        padding: 0 !important;
+        font-weight: 900;
+        font-size: 23px;
+    }
+
+    .secdiv {
+        padding: 10px !important;
+    }
+
+    .golden-btn {
+        font-size: 15px;
+    }
+
+    .location,
+    .phone,
+    .mail {
+       font-size: 15px;
+    }
 }
 </style>

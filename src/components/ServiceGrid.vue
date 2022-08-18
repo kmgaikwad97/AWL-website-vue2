@@ -14,7 +14,7 @@
                     <br>
                     <a>
                         <button class="bespokeBtn">
-                            <router-link to="/beskit" style="text-decoration:none; color:black;">READ MORE</router-link>
+                            <router-link class="btnsizing" to="/beskit" style="text-decoration:none; color:black;">READ MORE</router-link>
                         </button>
                     </a>
                 </div>
@@ -30,7 +30,7 @@
                     <br>
                     <a>
                         <button class="bespokeBtn">
-                            <router-link to="/besbat" style="text-decoration:none; color:black;">READ MORE</router-link>
+                            <router-link class="btnsizing" to="/besbat" style="text-decoration:none; color:black;">READ MORE</router-link>
                         </button>
                     </a>
                 </div>
@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .inner {
     /* border: 1px solid #fff; */
     overflow: hidden;
@@ -111,5 +111,10 @@ export default {
 }
 .bespokeBtn:hover{
     background: rgba(255, 255, 255,0.8);
+}
+@media screen and (max-width: 991px) {
+    .btnsizing {
+        font-size: 12px;
+    }                                                               
 }
 </style>
