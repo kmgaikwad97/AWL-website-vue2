@@ -13,7 +13,7 @@ export default {};
     width: 100%;
     height: 70vh;
     object-fit: cover;
-    object-position: 0 -302px !important;
+    object-position: 0 -302px;
 }
 
 @media screen and (max-width: 991px) {
